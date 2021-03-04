@@ -1,0 +1,2 @@
+execute unless entity @e[type=armor_stand,tag=StaGen,distance=..5] run summon armor_stand ~ ~ ~ {NoGravity:1,Tags:["StaGen","MainModule","Door_X+","Door_X-","Door_Z+","Door_Z-"]}
+execute as @e[type=armor_stand,tag=!generated,limit=1,sort=random,tag=StaGen] at @s run function ise:generation/process
